@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { lazy, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -14,11 +14,16 @@ import zigzag from "./images/images-3.jpeg"
 import bgimage from "./images/bgimage.jpg"
 import xicon from "./images/xicon.png"
 import graylines from "./images/graylines.jpg"
+import sicon from "./images/sicon.jpg"
+import animationimg from "./images/animation.png"
+import inverted from "./images/invertedcomma.jpg"
+import lappy from "./images/manonlappy.jpg"
+import suit from "./images/maninsuit.jpg"
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div>
+    <div class="overflow-x-hidden relative w-full">
       {/* navbar */}
       <nav class="bg-blue-950">
             <div class="relative w-[1080px] mx-auto flex items-center justify-between">
@@ -541,13 +546,13 @@ function App() {
       </section>
       {/* new features */}
       <section class="bg-white relative">
-        <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4">
-          <img src={dotted} alt="image" class="absolute w-[170px] left-[300px] -top-[6rem] -z-[10] h-[233px]" />
-          <img src={dotted} alt="image" class="absolute w-[170px] -right-[0.5rem] -top-[6rem] -z-[10] h-[233px]"/>
+        <div class="relative w-11/12 max-w-[1080px] mx-auto  mt-30">
+          <img src={dotted} alt="image" class="absolute w-[170px] left-[300px] -top-[6rem] z-[10] h-[233px]" />
+          <img src={dotted} alt="image" class="absolute w-[170px] -right-[2rem] -top-[6rem] z-[10] h-[150px]"/>
 
-          <div class="w-full grid grid-cols-3 gap-y-10 gap-x-4 relative z-[10]"> 
+          <div class="w-full grid grid-cols-3 gap-y-10 gap-x-10 relative z-[100] h-[330px] bg-white mb-60"> 
             {/* item 1 */}
-            <div class="relative flex flex-col">
+            <div class="relative flex flex-col z-0">
              <h2 class="font-high text-blue-950 font-bold text-4xl leading-[3.375rem]">
                New in the
             </h2>
@@ -562,18 +567,222 @@ function App() {
             <div 
             style={{backgroundImage: `url(${graylines})`}} class="h-[40px] w-full cursor-pointer bg-no-repeat hover:scale-105 transition-all duration-200" >
               <img src={xicon} alt="image" width="40px" height="40px" />
-              <h3>Corporate Cards</h3>
-              <p>Simplify your recurring, international and team expenses with savins on every speed. Save upto 10lacs every month.</p>
-              <div>
-                <a href="#">Know more</a>
-                <i></i>
-              </div>
+              <h3 class="font-high font-bold text-lg pt-4"> Corporate Cards</h3>
+              <p class="py-3 text-gray-500 leading-normal">Simplify your recurring, international and team expenses with savins on every speed. Save upto 10lacs every month.</p>
+              <div class="flex items-center cursor-pointer group">
+                  <a href="/" class="font-high font-bold text-blue-500 ">Know More</a>
+                  {/* icons */}
+                  <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 pb-4">
+                  <text x="0" y="20" fontSize="24" fill="#3182ce">{'>'}</text>
+                  </svg>
+
+                </div>
             </div>
             {/* card-2 */}
+            <div 
+            style={{backgroundImage: `url(${graylines})`}} class="h-[40px] w-full cursor-pointer bg-no-repeat hover:scale-105 transition-all duration-200" >
+              <img src={xicon} alt="image" width="40px" height="40px" />
+              <h3 class="font-high font-bold text-lg pt-4"> UPI Autopay</h3>
+              <p class="py-3 text-gray-500 leading-normal">Simplify your recurring, international and team expenses with savins on every speed. Save upto 10lacs every month.</p>
+              <div class="flex items-center cursor-pointer group">
+                  <a href="/" class="font-high font-bold text-blue-500 ">Know More</a>
+                  {/* icons */}
+                  <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 pb-4">
+                  <text x="0" y="20" fontSize="24" fill="#3182ce">{'>'}</text>
+                  </svg>
+
+                </div>
+            </div>
             {/* card-3*/}
+            <div 
+            style={{backgroundImage: `url(${graylines})`}} class="h-[40px] w-full cursor-pointer bg-no-repeat hover:scale-105 transition-all duration-200" >
+              <img src={xicon} alt="image" width="40px" height="40px" />
+              <h3 class="font-high font-bold text-lg pt-4"> Magic Checkout</h3>
+              <p class="py-3 text-gray-500 leading-normal">Simplify your recurring, international and team expenses with savins on every speed. Save upto 10lacs every month.</p>
+              <div class="flex items-center cursor-pointer group">
+                  <a href="/" class="font-high font-bold text-blue-500 ">Know More</a>
+                  {/* icons */}
+                  <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 pb-4">
+                  <text x="0" y="20" fontSize="24" fill="#3182ce">{'>'}</text>
+                  </svg>
+
+                </div>
+            </div>
             {/* card-4 */}
+            <div 
+            style={{backgroundImage: `url(${graylines})`}} class="h-[40px] w-full cursor-pointer bg-no-repeat hover:scale-105 transition-all duration-200" >
+              <img src={xicon} alt="image" width="40px" height="40px" />
+              <h3 class="font-high font-bold text-lg pt-4"> Payment Button</h3>
+              <p class="py-3 text-gray-500 leading-normal">Simplify your recurring, international and team expenses with savins on every speed. Save upto 10lacs every month.</p>
+              <div class="flex items-center cursor-pointer group">
+                  <a href="/" class="font-high font-bold text-blue-500 ">Know More</a>
+                  {/* icons */}
+                  <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 pb-4">
+                  <text x="0" y="20" fontSize="24" fill="#3182ce">{'>'}</text>
+                  </svg>
+
+                </div>
+            </div>
              {/* card-5 */}
+             <div 
+            style={{backgroundImage: `url(${graylines})`}} class="h-[40px] w-full cursor-pointer bg-no-repeat hover:scale-105 transition-all duration-200" >
+              <img src={xicon} alt="image" width="40px" height="40px" />
+              <h3 class="font-high font-bold text-lg pt-4"> Payment button</h3>
+              <p class="py-3 text-gray-500 leading-normal">Simplify your recurring, international and team expenses with savins on every speed. Save upto 10lacs every month.</p>
+              <div class="flex items-center cursor-pointer group">
+                  <a href="/" class="font-high font-bold text-blue-500 ">Know More</a>
+                  {/* icons */}
+                  <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 pb-4">
+                  <text x="0" y="20" fontSize="24" fill="#3182ce">{'>'}</text>
+                  </svg>
+
+                </div>
+            </div>
            </div>
+        </div>
+      </section>
+      {/* core features */}
+      <section class="w-full mt-14 relative bg-blue-500 text-white bg-center h-[600px] z-100">
+        <div class="w-11/12 relative max-w-[1080px] mx-auto pt-4">
+          <h2 class="font-high font-bold text-2xl text-center">Features</h2>
+          <div class="bg-green-300 w-6 h-1 mx-auto mt-4 mb-6 "></div>
+          <p class="font-medium text-center max-w-[450px] mx-auto">Empower your business with all the right tools to accept online payments and provide the best customer experience</p>
+          <div class="grid grid-cols-4 grid-rows-2 gp-[2rem] mt-8 gap-y-10 gap-x-10 ">
+            {/* card-1 */}
+            <div>
+              <img src={sicon} alt="image"  width="40px" height="40px"/>
+              <h3 class="font-high font-extrabold text-lg py-2">Instant Activation</h3>
+              <p class="opacity-80">Get activated and transact within 2 minutes. Completely online onboarding with minimum documentation.</p>
+            </div>
+            {/* card-2 */}
+            <div>
+              <img src={sicon} alt="image"  width="40px" height="40px"/>
+              <h3 class="font-high font-extrabold text-lg py-2">Easy Integration</h3>
+              <p class="opacity-80">Get activated and transact within 2 minutes. Completely online onboarding with minimum documentation.</p>
+            </div>
+            {/* card-3 */}
+            <div>
+              <img src={sicon} alt="image"  width="40px" height="40px"/>
+              <h3 class="font-high font-extrabold text-lg py-2">API Driven</h3>
+              <p class="opacity-80">Get activated and transact within 2 minutes. Completely online onboarding with minimum documentation.</p>
+            </div>
+            {/* card-4 */}
+            <div>
+              <img src={sicon} alt="image"  width="40px" height="40px"/>
+              <h3 class="font-high font-extrabold text-lg py-2">100+ Payment Modes</h3>
+              <p class="opacity-80">Get activated and transact within 2 minutes. Completely online onboarding with minimum documentation.</p>
+            </div>
+            {/* card-5 */}
+            <div>
+              <img src={sicon} alt="image"  width="40px" height="40px"/>
+              <h3 class="font-high font-extrabold text-lg py-2">Simple Pricing</h3>
+              <p class="opacity-80">Get activated and transact within 2 minutes. Completely online onboarding with minimum documentation.</p>
+            </div>
+            {/* card-6 */}
+            <div>
+              <img src={sicon} alt="image"  width="40px" height="40px"/>
+              <h3 class="font-high font-extrabold text-lg py-2">Best in Industry Support</h3>
+              <p class="opacity-80">Get activated and transact within 2 minutes. Completely online onboarding with minimum documentation.</p>
+            </div>
+            {/* card-7 */}
+            <div>
+              <img src={sicon} alt="image"  width="40px" height="40px"/>
+              <h3 class="font-high font-extrabold text-lg py-2">Dashboard Reporting</h3>
+              <p class="opacity-80">Get activated and transact within 2 minutes. Completely online onboarding with minimum documentation.</p>
+            </div>
+            {/* card-8 */}
+            <div>
+              <img src={sicon} alt="image"  width="40px" height="40px"/>
+              <h3 class="font-high font-extrabold text-lg py-2">Secure</h3>
+              <p class="opacity-80">Get activated and transact within 2 minutes. Completely online onboarding with minimum documentation.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* join razorpay section */}
+      <section class="bg-gray-100 relative pt-20 pb-12 ">
+      <div class="w-11/12 max-w-[1080px] relative mx-auto flex flex-row gap-x-5">
+        {/* left */}
+        <div class="flex flex-col justify-center max-w-[calc(100%-500px)] pl-15">
+          <h3 class="font-high font-extrabold text-xl text-blue-900">Join the 50,00,000+ businesses using Razorpay</h3>
+          <div class="bg-green-500 w-6 h-1 my-4 mb-10 "></div>
+          <p class="font-medium opacity-75">We make it easier for you to focus on building great products while we work on 
+            simplifying your payments. Become one of us by joining thousands of our happy users
+            and simplify the online payment experience for your customers.</p>
+          <p class="font-medium mt-5 opacity-75">Focus on your business while we handle the complexities of payments for you.</p>
+        </div>
+        {/* right */}
+        <div class="relative w-[300px] h-[350px] overflow-hidden ">
+        <div className="relative h-[3500px] w-[300px] overflow-hidden bg-white">
+      {/* Animated Container */}
+      <div className="absolute w-full aniclass">
+        <div className="flex flex-col gap-4">
+          <img src={animationimg} alt="logo1" className="w-[300px] mx-auto" />
+          <img src={animationimg} alt="logo2" className="w-[300px] mx-auto" />
+          {/* Duplicate logos below to create the illusion of infinite scroll */}
+          <img src={animationimg} alt="logo1-duplicate" className="w-[300px] mx-auto" />
+          <img src={animationimg} alt="logo2-duplicate" className="w-[300px] mx-auto" />
+        </div>
+      </div>
+    </div>
+    
+    
+  {/* Top Gradient Overlay */}
+  <div className="absolute top-0 left-0 w-full h-10 bg-gradient-to-b from-white to-transparent z-10" />
+
+  {/* Bottom Gradient Overlay */}
+  <div className="absolute bottom-0 left-0 w-full h-10 bg-gradient-to-t from-white to-transparent z-10" />
+    </div>
+      </div>
+      </section>
+      {/* testimonial section */}
+      <section class="relative">
+        <div class="w-11/12 max-w-[1300px] mx-auto py-20 relative">
+          <img src={dotted} alt="images" class="absolute w-[270px] top-[8rem] left-[2rem] -z-[10]" />
+          <h2 class="font-high font-bold text-2xl text-blue-900 text-center">An Experience <br /> People Love to Talk About</h2>
+          <div class="w-6 h-1 mx-auto bg-green-300 mt-4 my-4 "></div>
+          {/* left button */}
+          <button class="absolute w-[80px] h-[80px] bg-gray-200 rounded-full left-0 top-1/2 flex justify-center items-center">
+            <div class="w-[65%] h-[65%] bg-gray-300 rounded-full flex justify-center items-center mix-blend-multiply">
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 group-hover:text-gray-500 text-extrabold">
+                  <text x="37" y="17" fontSize="45" fill="gray" rotate="180deg" class="w-15 h-15 text-extrabold z-100">{'>'}</text>
+                  </svg>
+            </div>
+          </button>
+
+          {/* right button */}
+          <button class="absolute w-[80px] h-[80px] bg-gray-200 rounded-full right-0 top-1/2 flex justify-center items-center">
+            <div class="w-[65%] h-[65%] bg-gray-300 rounded-full flex justify-center items-center mix-blend-multiply">
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 group-hover:text-gray-500 text-extrabold">
+                  <text x="15" y="43" fontSize="45" fill="gray" class="w-15 h-15 text-extrabold z-100">{'>'}</text>
+                  </svg>
+            </div>
+          </button>
+          {/* main content */}
+          <div class="flex flex-row max-w-[950px] items-center mx-auto my-25 space-x-[10rem]">
+            {/* left image */}
+            <img src={suit} alt="image" loading='lazy'  height="320px" width="320px" class="rounded-xl"/>
+            {/* right part */}
+            <div class="max-w-[400px]">
+              <img src={inverted} alt="image" class="" width="35px" height="35px"/>
+              <p class="text-3xl font-extralight opacity-70">Readymade Closed Wallet Solutions For Quick Refunds</p>
+              <a href="#" class="text-gray-400 italic underline">Learn More</a>
+              <h3 class="font-high font-extrabold text-2xl">Lorem Ipsum</h3>
+              <p>CEO, XYZ Engineering Company</p>
+              <img src={lappy} alt="image" width="75px" height="75px"/>
+            </div>
+          </div>
+          {/* 6 dotted div */}
+          <div class="flex flex-row mx-auto space-x-2 justify-center">
+              {/* 1st dot */}
+              <div class="h-[10px] w-[10px] bg-gray-300 rounded-full"></div>
+              <div class="h-[10px] w-[10px] bg-blue-300 rounded-full"></div>
+              <div class="h-[10px] w-[10px] bg-gray-300 rounded-full"></div>
+              <div class="h-[10px] w-[10px] bg-gray-300 rounded-full"></div>
+              <div class="h-[10px] w-[10px] bg-gray-300 rounded-full"></div>
+              <div class="h-[10px] w-[10px] bg-gray-300 rounded-full"></div>
+          </div>
+
         </div>
       </section>
     </div>
