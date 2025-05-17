@@ -19,6 +19,15 @@ import animationimg from "./images/animation.png"
 import inverted from "./images/invertedcomma.jpg"
 import lappy from "./images/manonlappy.jpg"
 import suit from "./images/maninsuit.jpg"
+import limg from "./images/laptopimage.gif"
+import logo2 from "./images/logo2.avif"
+import insta from "./images/instagram.webp"
+import facebook from "./images/facebook.png"
+import twitter from "./images/twitter.webp"
+import linkedin from "./images/linkedin.png"
+import github from "./images/github.png"
+import down1 from "./images/down1.jpg"
+import down2 from "./images/down2.png"
 function App() {
   const [count, setCount] = useState(0)
 
@@ -785,6 +794,245 @@ function App() {
 
         </div>
       </section>
+      {/* CTA */}
+      <section class="bg-blue-400 w-full h-full relative ">
+        <div class="w-11/12 max-w-[1080px] mx-auto flex flex-row relative justify-between items-center space-x-20 pb-10">
+              {/* left part */}
+              <div class="pt-8">
+                <h2 class="font-extrabold text-white text-3xl font-high">Supercharge your business with Razorpay</h2>
+                <div class="w-6 h-1 bg-green-300 mt-4 mb-4"></div>
+                <p class="text-white">Sign up now to experience the future of payments and offer <br /> your customers the best checkout experience.</p>
+                <ul class="text-white flex flex-row gap-3 space-y-2 flex-wrap pt-8 max-w-[600px]">
+                  <li class="font-medium flex flex-row items-center space-x-2">
+                   <i class="fas fa-check" style={{color:"lightgreen", fontSize:"24px"}}></i>
+                  <span>Quick Onboarding </span>
+                </li>
+                  <li class="font-medium flex flex-row items-center space-x-2">
+                   <i class="fas fa-check" style={{color:"lightgreen", fontSize:"24px"}}></i>
+                  <span>Access to entire product suite </span>
+                </li>
+                <li class="font-medium flex flex-row items-center space-x-2">
+                   <i class="fas fa-check" style={{color:"lightgreen", fontSize:"24px"}}></i>
+                  <span>API access </span>
+                </li>
+                <li class="font-medium flex flex-row items-center space-x-2">
+                   <i class="fas fa-check" style={{color:"lightgreen", fontSize:"24px"}}></i>
+                  <span>24*7 support </span>
+                </li>
+                </ul>
+                <button class="min-w-[32px] flex flex-row items-center bg-white text-blue-400 w-fit rounded-md py-[14px] px-[18px] font-medium font-bold
+                 hover:bg-blue-500 transition-all duration-200 mt-8">Sign Up<svg width="24" height="24" fill="none" stroke="#63b3ed" strokeWidth="2" viewBox="0 0 24 24">
+                 <path d="M5 12h14M13 5l7 7-7 7" />
+               </svg>
+               </button>
+
+              </div>
+              {/* right part */}
+              <img src={limg} alt="image" class="absolute right-0 " width="300px" height="360px"/>
+        </div>
+      </section>
+
+      {/* footer section */}
+      <footer class="mt-10 flex flex-row justify-center items-start">
+        <div class="flex flex-row justigy-center space-x-25 items-start">
+        {/* div-1 */}
+        <div class="max-w-[300px] pl-15 space-y-5">
+          <img src={logo2} alt="image" width="150px" />
+          <p class="font-light text-[13px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus consequatur facilis, 
+            beatae deleniti dolorum cumque iure blanditiis dolores nobis. Vitae ipsum error quo ut numquam 
+            labore tenetur officiis, ipsam voluptatibus cum. Vel autem nihil et eveniet! Nemo dolor tempore cum, 
+            neque dicta at veritatis enim voluptate unde et ad soluta odit ab ut, possimus, necessitatibus 
+            explicabo. Ea iure quasi architecto.</p>
+
+          <p class="font-light text-[13px]" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt atque ut eligendi dolorum 
+            illum libero dicta placeat, nobis ipsa ex eum commodi? Minus alias commodi aliquid. Temporibus, 
+            eveniet, molestiae id sunt vel, minus quasi eius ipsam distinctio facere saepe facilis?</p>
+
+          <p class="font-light text-[13px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quibusdam enim 
+            exercitationem maiores quae quam error esse est unde magni dignissimos velit assumenda, aut vitae 
+            nulla! Nobis?</p>
+
+          <p class="font-light text-[10px]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius earum mollitia quaerat voluptatibus 
+            ea, id error dolores a sapiente reiciendis quam vel quidem possimus vero doloremque voluptatum odit 
+            tempore aut. Doloremque enim quaerat aliquid voluptatem voluptates?</p>
+
+          <h3 class="font-bold">SUBSCRIBE TO OUR NEWSLETTER</h3>
+          <form className="box-content  max-w-[300px] flex items-center border border-gray-300 rounded-md shadow-sm overflow-hidden w-fit bg-white">
+  {/* Email Input */}
+  <input
+    type="email"
+    placeholder="Your email address"
+    className=" py-2 text-gray-600 placeholder-gray-400 focus:outline-none"
+    required
+  />
+
+  {/* Subscribe Button */}
+  <button
+    type="submit"
+    className="flex items-center py-2 text-blue-600 font-semibold hover:text-blue-800"
+  >
+    Subscribe
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="currentColor"
+      className="w-4 h-4 ml-1"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+    </svg>
+  </button>
+</form>
+
+
+          <div class="flex flex-row gap-5">
+            <img src={down1} alt="image" width="50px" height="30px"/>
+            <img src={down2} alt="image" width="50px" height="30px"/>
+          </div>
+        </div>
+         {/* div-2 */}
+        <div class="max-w-[300px] space-y-5">
+          <ul class="space-y-2">
+            <h3  class="text-gray-500 font-bold">BANKING PLUS</h3>
+            <a href="#" class="text-blue-500">RazorpayX</a><br />
+            <a href="#" class="text-blue-500">RazorpayX</a><br />
+            <a href="#" class="text-blue-500">RazorpayX</a><br />
+            <a href="#" class="text-blue-500">RazorpayX</a><br />
+            <a href="#" class="text-blue-500">RazorpayX</a>
+            <div class="flex flex-row space-x-2">
+              <a href="#" class="text-blue-500">View Live Demo</a>
+              <button class="bg-green-400 text-white p-1 rounded">NEW</button>
+            </div>
+          </ul>
+
+          <ul class="space-y-2">
+            <h3 class="text-gray-500 font-bold">LENDING</h3>
+            <a href="#" class="text-blue-500">RazorpayX</a><br />
+            <a href="#" class="text-blue-500">RazorpayX</a><br />
+            <a href="#" class="text-blue-500">RazorpayX</a><br />
+            <a href="#" class="text-blue-500">RazorpayX</a>
+          </ul>
+
+          <ul class="space-y-2">
+            <h3 class="text-gray-500 font-bold">RISK & FRAUD</h3>
+            <a href="#" class="text-blue-500">RazorpayX</a><br />
+            <div class="flex flex-row space-x-2">
+              <a href="#" class="text-blue-500">PrePay CoD</a>
+              <button class="bg-green-400 text-white p-1 rounded">NEW</button>
+            </div>
+          </ul>
+
+          <ul class="space-y-2">
+            <h3 class="text-gray-500 font-bold">BECOME A PARTNER</h3>
+            <a href="#" class="text-blue-500">RazorpayX</a><br />
+            <a href="#" class="text-blue-500">RazorpayX</a>
+          </ul>
+          <ul class="space-y-2">
+            <h3 class="text-gray-500 font-bold">MORE</h3>
+            <a href="#" class="text-blue-500" >RazorpayX</a><br />
+            <a href="#" class="text-blue-500" >RazorpayX</a><br />
+            <a href="#" class="text-blue-500" >RazorpayX</a><br />
+            <a href="#" class="text-blue-500" >RazorpayX</a><br />
+            <a href="#" class="text-blue-500" >RazorpayX</a><br />
+            <a href="#" class="text-blue-500" >RazorpayX</a><br />
+            <a href="#" class="text-blue-500" >RazorpayX</a><br />
+            <a href="#" class="text-blue-500" >RazorpayX</a><br />
+            <a href="#" class="text-blue-500" >RazorpayX</a>
+          </ul>
+        </div>
+
+         {/* div-3 */}
+        <div class="max-w-[300px] space-y-5">
+          <ul class="space-y-2">
+            <h3 class="text-gray-500 font-bold">ACCEPT PAYMENTS</h3>
+            <a href="#" class="text-blue-500">RazorpayX</a><br />
+            <a href="#" class="text-blue-500">RazorpayX</a><br />
+            <a href="#" class="text-blue-500">RazorpayX</a><br />
+            <a href="#" class="text-blue-500">RazorpayX</a><br />
+            <a href="#" class="text-blue-500">RazorpayX</a><br />
+            <a href="#" class="text-blue-500">RazorpayX</a>
+          </ul>
+          <ul class="space-y-2">
+            <h3 class="text-gray-500 font-bold">DEVELOPERS</h3>
+             <a href="#" class="text-blue-500">RazorpayX</a><br />
+            <a href="#" class="text-blue-500">RazorpayX</a><br />
+            <a href="#" class="text-blue-500">RazorpayX</a>
+          </ul>
+          <ul class="space-y-2">
+            <h3 class="text-gray-500 font-bold">RESOURCES</h3>
+            <a href="#" class="text-blue-500">RazorpayX</a><br />
+            <a href="#" class="text-blue-500">RazorpayX</a><br />
+            <a href="#" class="text-blue-500">RazorpayX</a><br />
+            <a href="#" class="text-blue-500">RazorpayX</a><br />
+            <a href="#" class="text-blue-500">RazorpayX</a>
+          </ul>
+          <ul class="space-y-2">
+            <h3 class="text-gray-500 font-bold">SOLUTIONS</h3>
+            <a href="#" class="text-blue-500">RazorpayX</a><br />
+            <a href="#" class="text-blue-500">RazorpayX</a><br />
+            <a href="#" class="text-blue-500">RazorpayX</a><br />
+            <a href="#" class="text-blue-500">RazorpayX</a>
+          </ul>
+          <ul class="space-y-2">
+            <h3 class="text-gray-500 font-bold">FIRE TOOLS</h3>
+            <a href="#" class="text-blue-500">RazorpayX</a><br />
+            <a href="#" class="text-blue-500">RazorpayX</a><br />
+           <div class="flex flex-row space-x-2">
+              <a href="#" class="text-blue-500">GSE Number Search</a>
+              <button class="bg-green-400 text-white p-1 rounded">NEW</button>
+            </div>
+          </ul>
+        </div>
+         {/* div-4 */}
+        <div class="max-w-[300px] space-y-5">
+          <ul class="space-y-2">
+            <h3 class="text-gray-500 font-bold">COMPANY</h3>
+             <a href="#" class="text-blue-500">RazorpayX</a><br />
+             <div class="flex flex-row space-x-2">
+              <a href="#" class="text-blue-500">Careers</a>
+              <button class="bg-green-400 text-white p-1 rounded">NEW</button>
+            </div>
+            <a href="#" class="text-blue-500">RazorpayX</a><br />
+            <a href="#" class="text-blue-500">RazorpayX</a><br />
+            <a href="#" class="text-blue-500">RazorpayX</a><br />
+            <a href="#" class="text-blue-500">RazorpayX</a><br />
+            <a href="#" class="text-blue-500">RazorpayX</a><br />
+            <a href="#" class="text-blue-500">RazorpayX</a><br />
+            <a href="#" class="text-blue-500">RazorpayX</a><br />
+          </ul>
+          <ul>
+            <h3 class="text-gray-500 font-bold">HELP & SUPPORT</h3>
+            <a href="#" class="text-blue-500">RazorpayX</a><br />
+            <a href="#" class="text-blue-500">RazorpayX</a><br />
+            
+          </ul>
+          <ul class="space-y-2">
+            <h3 class="text-gray-500 font-bold">FIND US ONLINE</h3>
+            <div class="flex flex-row mx-auto space-x-4">
+              <img src={facebook} alt="image" width="24px" height="24px" />
+              <img src={twitter} alt="image"  width="24px" height="24px" />
+              <img src={insta} alt="image"  width="24px" height="24px" />
+              <img src={github} alt="image"  width="24px" height="24px" />
+              <img src={linkedin} alt="image"  width="24px" height="24px" />
+            </div>
+          </ul>
+          <h3 class="text-gray-500 font-bold">REGD. OFFICE ADDRESS</h3>
+          <ul>
+            <li>Razorpay Software Private limited</li>
+            <li>1st floor, SJR Cyber,</li>
+            <li>22 Laksar Hosur Road, Adugodi</li>
+            <li>Bengaluru,5660030,</li>
+            <li>Karnataka,India</li>
+            <li>CIN: U72200KA2013P99908865GT675</li>
+          </ul>
+          <ul>
+            <li>&#169;Razorpay 2022</li>
+            <li>All Rights Reserved</li>
+          </ul>
+        </div>
+      </div>
+      </footer>
     </div>
   )
 }
